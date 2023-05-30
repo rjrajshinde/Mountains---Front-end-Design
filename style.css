@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+:root {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  --white: #fff;
+  font-size: 14px;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  outline: none;
+  text-decoration: underline;
+  color: var(--white);
+  text-underline-offset: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.topContainer {
+  background-image: url("./assets/FirstBG.png");
+  background-size: cover;
+}
+
+.midContainer {
+  background-image: url("./assets/middleBG.png");
+  background-size: cover;
+}
+
+.subContainer {
+  width: 65%;
+}
+
+.mainLogoNavBar {
+  background-color: var(--white);
+  margin: 1rem;
+}
+
+.spanO1 {
+  color: #687893;
+  font-size: 11rem;
+  font-family: "Bebas Neue", sans-serif;
+}
+.spanHistory {
+  font-size: 3.5rem;
+  color: #414f6b;
+  font-family: "Bebas Neue", sans-serif;
+  position: relative;
+  left: -2rem;
+  top: -2rem;
+}
+.pPara {
+  margin: -4rem 5rem;
+}
+
+.carasolContainer {
+  background-image: url("./assets/carasolBG.png");
+  background-size: cover;
+  height: 14rem;
+}
+
+.carasolContainer .myCarousel .item > img {
+  width: 5rem;
+  height: 3rem;
+}
+
+@media screen and (max-width: 767px) {
+  .subContainer {
+    width: 85%;
+  }
+  .pPara {
+    /* margin: -4rem 6rem; */
+    margin: 0;
+    margin-top: -2rem;
+  }
+
+  .topContainer {
+    background-size: auto;
+  }
+
+  .mainLogoNavBar .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
