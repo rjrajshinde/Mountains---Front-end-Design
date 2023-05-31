@@ -195,6 +195,13 @@ a {
 .subFooterContainer {
   padding: 1rem;
 }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .footerContainer .footer .copyrightText {
   font-style: italic;
   color: var(--white);
@@ -206,6 +213,9 @@ a {
 /* FOOTER STYLE END */
 
 @media screen and (max-width: 767px) {
+  :root {
+    font-size: 13px;
+  }
   .subContainer,
   .mainLogoNavBar,
   .climbContainer {
@@ -232,14 +242,19 @@ a {
     align-items: center;
   }
 
-  .carousel-indicators li {
-    /* background-color: white; */
-    border-radius: 50%;
-    width: 8px;
-    height: 8px;
+  .scheduleCard {
+    position: relative;
+    top: 7rem;
+    left: -2.5rem;
+    font-size: 1.1rem;
   }
-  .carousel-item {
-    display: flex;
-    flex-direction: row;
+  .subFooterContainer {
+    width: 85%;
+  }
+
+  .footer {
+    flex-direction: column;
+    /* justify-content: space-around; */
+    gap: 2rem;
   }
 }
