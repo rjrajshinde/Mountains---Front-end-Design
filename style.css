@@ -152,7 +152,58 @@ a {
   height: 500px;
 }
 
+.scheduleCard {
+  position: relative;
+  top: 7rem;
+  left: 2.7rem;
+  font-size: 1.1rem;
+}
+
+.scheduleContainer .scheduleCard .card-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.9rem;
+  color: var(--darkBlue);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.scheduleContainer .scheduleCard .card {
+  width: 25rem;
+  padding: 0rem 1.7rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+
+.scheduleContainer .scheduleCard .card .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.scheduleContainer .scheduleCard .card .line {
+  display: flex;
+  justify-content: space-between;
+}
+
 /* SCHEDULE CONTAINER STYLE END */
+
+/* FOOTER STYLE START */
+
+.footerContainer {
+  background-color: var(--darkBlue);
+}
+.subFooterContainer {
+  padding: 1rem;
+}
+.footerContainer .footer .copyrightText {
+  font-style: italic;
+  color: var(--white);
+  letter-spacing: 1px;
+  font-weight: 700;
+  opacity: 0.4;
+}
+
+/* FOOTER STYLE END */
 
 @media screen and (max-width: 767px) {
   .subContainer,
@@ -161,7 +212,6 @@ a {
     width: 85%;
   }
   .pPara {
-    /* margin: -4rem 6rem; */
     margin: 0;
     margin-top: -2rem;
   }
@@ -174,5 +224,22 @@ a {
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+
+  .carasolContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carousel-indicators li {
+    /* background-color: white; */
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+  }
+  .carousel-item {
+    display: flex;
+    flex-direction: row;
   }
 }
