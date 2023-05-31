@@ -8,6 +8,8 @@
   display: flex;
   flex-direction: column;
   --white: #fff;
+  --darkBlue: #414f6b;
+  --gray: #b0b4be;
   font-size: 14px;
 }
 
@@ -33,29 +35,33 @@ a {
   background-size: cover;
 }
 
-.historyContainer {
-  background-image: url("./assets/middleBG.png");
-  background-size: cover;
-}
-
 .subContainer {
   width: 65%;
   min-height: 100vh;
+}
+
+.width65 {
+  width: 65%;
 }
 
 /* MAIN LOGO STYLE START */
 .mainLogoNavBar {
   background-color: var(--white);
   margin: 1rem;
-  width: 65%;
 }
 /* MAIN LOGO STYLE END */
 
 /* HISTORY AND CLIMB SECTION STYLE START */
-.climbContainer {
-  width: 65%;
-  margin-top: -1.5rem;
+
+.historyContainer {
+  background-image: url("./assets/middleBG.png");
+  background-size: cover;
 }
+
+.climbContainer {
+  margin: -1.5rem 0 -3rem 0;
+}
+
 .spanO1,
 .spanO2 {
   color: #687893;
@@ -70,7 +76,7 @@ a {
 .spanHistory,
 .spanClimb {
   font-size: 3.5rem;
-  color: #414f6b;
+  color: var(--darkBlue);
   font-family: "Bebas Neue", sans-serif;
   position: relative;
   left: -2rem;
@@ -87,6 +93,30 @@ a {
 }
 
 /* HISTORY SECTION STYLE END*/
+
+/* MOUNTAIN SECTION STYLE START */
+.mountainContainer {
+  background-color: var(--darkBlue);
+  padding: 0 0.8rem;
+}
+
+.mountainContainer .mountain1Span,
+.mountain2Span {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2rem;
+  text-decoration: underline;
+  color: var(--gray);
+}
+
+.mountainContainer .mountain1Span {
+  margin-left: -0.8rem;
+  background-color: #b0b4be;
+  color: var(--darkBlue);
+  padding: 0.15rem 1rem;
+  margin-right: 2rem;
+}
+
+/* MOUNTAIN SECTION STYLE END */
 
 /* CARASOL STYLE START */
 .carasolContainer {
@@ -109,6 +139,20 @@ a {
   height: 8px;
 }
 /* CARASOL STYLE END */
+
+/* SCHEDULE CONTAINER STYLE START */
+
+.scheduleContainer {
+  background-image: url("./assets/lastBG1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.scheduleContainer .scheduleSubContainer {
+  height: 500px;
+}
+
+/* SCHEDULE CONTAINER STYLE END */
 
 @media screen and (max-width: 767px) {
   .subContainer,
