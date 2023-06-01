@@ -138,6 +138,16 @@ a {
   width: 8px;
   height: 8px;
 }
+
+.carousel {
+  width: 100%;
+}
+
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
 /* CARASOL STYLE END */
 
 /* SCHEDULE CONTAINER STYLE START */
@@ -216,14 +226,27 @@ a {
   :root {
     font-size: 13px;
   }
+
+  .topContainer {
+    min-height: unset !important;
+    height: 80vh;
+    background-position: -270px;
+    background-size: cover !important;
+  }
   .subContainer,
   .mainLogoNavBar,
   .climbContainer {
     width: 85%;
   }
-  .pPara {
-    margin: 0;
+
+  .historyContainer {
+    text-align: center;
+  }
+
+  .historyPara {
+    margin: auto;
     margin-top: -2rem;
+    width: 90%;
   }
 
   .topContainer {
@@ -241,20 +264,45 @@ a {
     justify-content: center;
     align-items: center;
   }
+  .slide-box img {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .climbSection {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .climbPara {
+    margin-top: -3rem;
+  }
+
+  .mountainContainer .mountain1Span {
+    margin: 0;
+  }
 
   .scheduleCard {
     position: relative;
-    top: 7rem;
-    left: -2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
     font-size: 1.1rem;
   }
+
   .subFooterContainer {
     width: 85%;
   }
 
   .footer {
     flex-direction: column;
-    /* justify-content: space-around; */
     gap: 2rem;
+  }
+
+  .copyrightText {
+    text-align: center;
   }
 }
