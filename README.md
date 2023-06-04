@@ -2,7 +2,7 @@
 # Mountains-Frontend Design
 
 
-This is just a Responsive Front-end Design using simple HTML, CSS, JS, Bootstrap.
+This is just a Responsive Front-end Design using simple HTML, CSS, Bootstrap.
 ## Run Locally
 
 Clone the project
